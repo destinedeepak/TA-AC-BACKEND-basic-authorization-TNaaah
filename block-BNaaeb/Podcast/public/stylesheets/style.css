@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom css  */
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/* grid  */
+.grid {
+  display: grid;
+}
+.center {
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center; 
+}
+a { 
+  display: inline-block;
+  text-decoration: none;
+}
+.relative {
+  position: relative;
+}
+.full-width {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+/* header  */
+.header {
+  background-color: #009911;
+  padding: 1rem;
+}
+.brand-name {
+  font-size: 1.6rem;
+  color: yellow;
+  font-weight: 500;
+}
+.brand-name span {
+  color: black;
+}
+/* index  */
+.index-section {
+  background: url('/images/music.png') center center;
+  background-size: cover;
+  height: 100vh;
+}
+.index-section .formEntry {
+  margin: 1rem auto;
+}
+.mood-cast-btn {
+  background: green;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 5rem;
+}
+.create-btn a{
+  display: inline-block;
+  margin-bottom: .3rem;
+  color: #926EB3;
+  background-color: #EFEFEF;
+  padding: .5rem;
+  width: 300px;
+}
+.mood-cast-btn span {
+  color: white;
+}
+.mood-cast-btn .span {
+  color: yellow;
+  font-size: 1.2rem;
+}
+.mood-cast-btn small {
+  color: black;
+  margin-left: 1px;
+}
+
+
+/* form  */
+
+#title-Tag-Line {
+  font-size: 20px;
+}
+/* .card-item__bg{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  transform: translate(0px, 50px);
+  z-index: 5;
+} */
+
+/* form animation starts */
+.form {
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 5px solid #0e3721;
+/*   z-index: 1; */
+  animation: bounce 1.5s infinite;
+}
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+}
+
+.title{
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+.termsConditions{
+  margin: 0 auto 5px 80px;
+}
+
+.pageTitle{
+  font-size: 2em;
+  font-weight: bold;
+}
+.secondaryTitle{
+  color: grey;
+}
+
+.name {
+  background-color: #ebebeb;
+  color: grey;
+  font-size: 1rem;
+}
+.name:hover {
+  border-bottom: 5px solid #0e3721;
+  /* height: 30px; */
+  /* width: 380px; */
+  transition: ease 0.5s;
+}
+
+.email {
+  background-color: #ebebeb;
+  height: 2em;
+}
+
+.email:hover {
+  border-bottom: 5px solid #0e3721;
+  /* height: 30px; */
+  /* width: 380px; */
+  transition: ease 0.5s;
+}
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.message:hover {
+  border-bottom: 5px solid #0e3721;
+  transition: ease 0.5s;
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: #009911;
+  font-size: 20px;
+}
+
+.submit:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  /* width: 300px; */
+  border-top: 5px solid #0e3750;
+  border-radius: 0%;
+}
+.select {
+  font-size: 1rem;
+  color: #7e7c7c;
+}
+.date-label {
+  margin-bottom: -1.2rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@keyframes bounce {
+  0% {
+    tranform: translate(0, 4px);
+  }
+  50% {
+    transform: translate(0, 8px);
+  }
+} 
+/* podcasts */
+.podcasts-sec{
+  grid-template-columns: repeat(7, 120px);
+  color: white;
+  font-weight: 300;
+  padding: 1rem 25rem;
+  
+}
+.each-podcast {
+  box-shadow: 1px 1px 10px 1px rgb(56, 54, 54);
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: #3f9b40;
+  align-items: center;
+  justify-content: space-between;
+}
+.each-podcast img {
+  width: 200px;
+  height: 125px;
+  object-fit: cover;
+}
+.each-podcast a {
+  font-size: 1.8rem;
+  margin-right: 10rem;
+  margin-bottom: .3rem;
+  color: rgb(224, 224, 189);
+}
+.each-podcast .single{
+  flex-direction: column;
+  text-align: start;
+}
+.each-podcast h5 {
+  font-size: .85rem;
+}
+.single a {
+  color: black;
+}
+.single p {
+  font-size: .8rem;
+}
+.each-podcast .audio {
+  position: absolute;
+  width: 18%;
+  border: 0;
+  top: 2.2rem;
+  left: 2.8rem;
+}
+.each-podcast .audio::-webkit-media-controls-current-time-display,
+.each-podcast .audio::-webkit-media-controls-time-remaining-display,
+.each-podcast .audio::-webkit-media-controls-mute-button,
+.each-podcast .audio::-webkit-media-controls-timeline{
+  display: none;
+}
+.each-podcast .audio::-webkit-media-controls-panel{
+  background-color: #FFFF00;
+  color: white;
+}
+.add-btn {
+  width: 100%;
+  background: #FFFF00;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  padding: .5rem;
+}
+/* details  */
+.details-sec {
+  color: white;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.details-sec  h2 {
+  font-size: 2rem;
+}
+.details-sec img {
+  width: 400px;
+}
